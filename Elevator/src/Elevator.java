@@ -41,9 +41,8 @@ public class Elevator
         System.out.println("The elevator is on it's way up...");
 
         for (person = destination; destination>=floor; floor++)
-
-            System.out.println("You are on"+floor);
-
+            System.out.println("Reached Floor"+floor);
+           floor--;
         System.out.println("The elevator has reached to "+destination+"floor");
     }
 
@@ -51,12 +50,10 @@ public class Elevator
     {
         System.out.println("The elevator is on it's way down...");
         for (person = destination; destination<=floor; floor--)
-
-            System.out.println("You are on "+floor);
-
-        System.out.println("The elevator has reached to "+destination);
-        if(floor!=1&floor!=2&floor!=3)
-        	System.out.println("th floor");
+            System.out.println("Reached Floor"+floor);
+        floor++;
+        System.out.println("The elevator has reached to "+destination+"floor");
+       
     }
 }
 
