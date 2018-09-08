@@ -35,6 +35,7 @@ public class Elevator
         {
             ElevatorUp();
         }
+         System.out.println("Reached !!You can leave now!!");
     }
     public static void ElevatorUp()
     {
@@ -55,5 +56,6 @@ public class Elevator
         System.out.println("The elevator has reached to "+destination+"floor");
        
     }
+   
 }
 
